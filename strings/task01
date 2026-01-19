@@ -1,1 +1,16 @@
 
+text, key = input().split()
+key = int(key)
+
+result = ""
+
+for ch in text:
+    if ch.isalpha():
+        if ch.isupper():
+            start = ord('A')
+        else:
+            start = ord('a')
+        cypher = (ord(ch) - start + key) % 26 + start
+        result += chr(cypher)
+
+print(result)
