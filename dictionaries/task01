@@ -1,1 +1,9 @@
 
+d = {1: 'a', 2: 'b', 3: 'c', 4: 'a', 5: 'd', 6: 'e', 7: 'a', 8: 'b'}
+
+user_input = input()
+
+result = [k for k, v in d.items() if v == user_input]
+
+print(result)
+
